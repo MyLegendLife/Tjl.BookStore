@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Tjl.BookStore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200823123026_Create_Customer_Entity.cs" />
+    <Compile Remove="Migrations\20200823123026_Create_Customer_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20200823123302_Create_Customer_Entity.cs" />
+    <Compile Remove="Migrations\20200823123302_Create_Customer_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20200823123714_Create_Customer_Entity.cs" />
+    <Compile Remove="Migrations\20200823123714_Create_Customer_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20200823123906_Init_Database.cs" />
+    <Compile Remove="Migrations\20200823123906_Init_Database.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tjl.BookStore.EntityFrameworkCore\Tjl.BookStore.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>
