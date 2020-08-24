@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Tjl.BookStore.BookStore.Customer;
+using Tjl.BookStore.Customers;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace Tjl.BookStore.Mappings

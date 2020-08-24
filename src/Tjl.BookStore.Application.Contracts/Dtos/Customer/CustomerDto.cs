@@ -2,9 +2,9 @@
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Auditing;
 
-namespace Tjl.BookStore.Customers
+namespace Tjl.BookStore.Dtos.Customer
 {
-    public class CustomerDto : EntityDto, IHasCreationTime
+    public class CustomerDto : EntityDto<Guid>, IHasCreationTime
     {
         public string Code { get; set; }
 

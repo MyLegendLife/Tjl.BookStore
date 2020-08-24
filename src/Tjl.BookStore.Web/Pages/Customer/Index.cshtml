@@ -1,0 +1,27 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Tjl.BookStore.Localization
+@model Tjl.BookStore.Web.Pages.Customer.IndexModel
+@inject IHtmlLocalizer<BookStoreResource> L
+@section scripts
+{
+    <abp-script src="/Pages/Customer/index.js" />
+}
+<abp-card>
+    <abp-card-header>
+        <h2>@L["Customer"]</h2>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="BookTable">
+            <thead>
+                <tr>
+                    <th>@L["Code"]</th>
+                    <th>@L["Name"]</th>
+                    <th>@L["Ket"]</th>
+                    <th>@L["Description"]</th>
+                    <th>@L["CreationTime"]</th>
+                </tr>
+            </thead>
+        </abp-table>
+    </abp-card-body>
+</abp-card>

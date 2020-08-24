@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using JetBrains.Annotations;
 using Tjl.BookStore.Customers;
+using Tjl.BookStore.Dtos.Customer;
 
 namespace Tjl.BookStore
 {
@@ -13,6 +14,7 @@ namespace Tjl.BookStore
              * into multiple profile classes for a better organization. */
 
             CreateMap<Customer, CustomerDto>();
+            CreateMap<CreateUpdateCustomerDto, Customer>();
         }
     }
 }

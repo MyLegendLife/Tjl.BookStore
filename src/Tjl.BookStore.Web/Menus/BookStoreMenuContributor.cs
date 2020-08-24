@@ -28,7 +28,16 @@ namespace Tjl.BookStore.Web.Menus
 
             var l = context.GetLocalizer<BookStoreResource>();
 
-            context.Menu.Items.Insert(0, new ApplicationMenuItem("BookStore.Home", l["Menu:Home"], "~/"));
+            context.Menu.Items.Insert(
+                0,
+                new ApplicationMenuItem("BookStore.Home", l["Menu:Home"], "~/")
+                    .AddItem(new ApplicationMenuItem("BookStore.Customer", l["Menu:Customer"], "/Customer"))
+                );
+
+            context.Menu.Items.Insert(
+                1,
+                new ApplicationMenuItem("Customer", l["Menu:Customer"], "/Customer")
+            );
         }
     }
 }

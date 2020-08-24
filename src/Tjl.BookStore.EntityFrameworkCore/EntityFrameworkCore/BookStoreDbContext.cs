@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using Tjl.BookStore.BookStore.Customer;
+using Tjl.BookStore.Customers;
 using Tjl.BookStore.Users;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
